@@ -32,22 +32,16 @@
     color: black;
     transition: ease 0.3s;
 }
-.search-bar{
-    width:20%;
-}
-.position-fixed{
-    position:fixed;
+
+.d-flex{
+    display: flex;
 }
 .search{
-    
-    width:90%;
-    margin:10px 15px;
+    margin:10px auto !important;
     font-size:30px;
     padding:5px 4px;
 }
-.main-container{
-    display: flex;
-}
+
 /*cocktails names - font-family: "Bebas Neue", sans-serif;*/
 .cocktail-name{
     font-family: "Bebas Neue", sans-serif;
@@ -58,19 +52,28 @@
 }
 .main{
     display: grid;
-
-width:90%;
     grid-template-columns: repeat(5,auto);
 }
  .card{
     padding:5px;
-    width:200px;
+    height:fit-content;
     margin:30px;
- }
- .card>img{
-    height:300px;
-
  }
  .ingredient{
     font-size:18px;
+    margin:5px 0;
+ }
+.ingredient>b{
+    background-color:#008ae6;
+    border-radius:3px;
+    color:white;
+    padding:0px 5px;
+}
+ @media only screen and (max-width: 1023px){
+    .d-flex{
+        display: block !important;
+    }
+    .main{
+        display: block;
+    }
  }
