@@ -52,13 +52,14 @@
 }
 .main{
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(5,350px);
 }
  .card{
     padding:5px;
-    height:fit-content;
+
     margin:30px;
  }
+
  .ingredient{
     font-size:18px;
     margin:5px 0;
