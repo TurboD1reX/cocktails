@@ -52,7 +52,7 @@
 }
 .main-cocktails{
     display: grid;
-    grid-template-columns: repeat(5,350px);
+    grid-template-columns: repeat(5,310px);
 }
  .card{
     padding:5px;
