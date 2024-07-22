@@ -50,7 +50,7 @@
     font-weight: 700;
 
 }
-.main{
+.main-cocktails{
     display: grid;
     grid-template-columns: repeat(5,350px);
 }
@@ -70,6 +70,37 @@
     color:white;
     padding:0px 5px;
 }
+
+.main-shots{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.shot{
+Height:fit-content;
+padding:20px ; 
+}
+.shot-name{
+    font-family: "Abril Fatface", serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size:30px;
+    font-weight: 700;
+}
+
+.shot-ingredient {
+font-size:larger;
+font-weight: 500;
+}                     
+.shot-ingredient > b{
+background-image:linear-gradient(to right,white,red);
+padding:0px 10px !important;
+margin:0px 0px !important;
+font-weight: 900;
+}
+
+
+
+
  @media only screen and (max-width: 1023px){
     .d-flex{
         display: block !important;
