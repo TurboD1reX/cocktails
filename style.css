@@ -12,7 +12,7 @@
     transition: ease 0.2s;
 }
 .card:hover{
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.2); 
     transition: ease 0.2s;
 }
 .cocktails{
@@ -20,9 +20,22 @@
     font-size:60px;
     font-weight: 900;
 }
+.ingredients.selected{
+    background-color: rgb(199, 197, 197);
+    color:#005892;
+    transition: ease 0.3s;
+}
+.remove-icon{
+
+    font-size:20px;
+}
+.ingredients.selected .remove-icon{
+    display: flex;
+}
 .ingredients{
     color: #0099ff;
     display:flex;
+    text-transform: capitalize;
     width:fit-content;
     padding:2px 10px;
     font-size :16px;
@@ -33,11 +46,6 @@
     cursor:pointer;
     transition: ease 0.3s;
     background-color: #e9ecef;
-}
-.ingredients:hover{
-    background-color: rgb(199, 197, 197);
-    color:#005892;
-    transition: ease 0.3s;
 }
 .search{
     margin:10px auto !important;
