@@ -2,10 +2,20 @@
     font-family: "Oswald", sans-serif;
     
 }
-
+.hyperlink-button{
+font-family: "Playwrite CO", cursive !important;
+font-size:28px;
+font-weight:900;
+transition:ease 0.175s;
+border:1px solid black;
+}
+.hyperlink-button:hover{
+    transition:ease 0.175s;
+    cursor:pointer;
+    background-color: silver;
+}
 .logo{
     height:75px;
-    
 }
 .card{
     Height:fit-content;
@@ -17,7 +27,7 @@
     transition: ease 0.2s;
 }
 .cocktails{
-    font-family: "Playwrite CO", cursive;
+    font-family: "Playwrite CO", cursive !important;
     font-size:60px;
     font-weight: 900;
 }
@@ -72,11 +82,6 @@
     color:white;
     padding:0px 5px;
 }
-
-.main-shots{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-}
 .shot{
 Height:fit-content;
 padding:20px ; 
@@ -88,15 +93,18 @@ padding:20px ;
     font-size:30px;
     font-weight: 700;
 }
-
+.shot > img{
+    max-height:250px;
+}
 .shot-ingredient {
 font-size:larger;
 font-weight: 500;
 }                     
 .shot-ingredient > b{
-background-image:linear-gradient(to right,white,red);
-padding:0px 10px !important;
-margin:0px 0px !important;
+border-radius:10em;
+background-image:linear-gradient(to right,white,#008ae6);
+padding:2px 15px !important;
 font-weight: 900;
+
 }
 

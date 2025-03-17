@@ -22,9 +22,11 @@
             <a href="egorkryvoi.pl"><img src="img/bigElogo.png" class="img-fluid logo"></a>
             <div class="cocktails">Cocktails</div>
         </nav>
-        
-            <div class="search-bar col-sm-12 col-md-2 col-lg-2 ">
-
+        <div class="search-bar col-sm-12 col-md-2 col-lg-2 ">
+                <section class="d-flex">
+                    <div class="hyperlink-button mt-3 px-3 py-3" id="cocktails">Cocktails</div>
+                    <div class="hyperlink-button mt-3 px-3 py-3" id="shots">Shots</div>
+                </section>
                 <input type="text" id="search-input" class="search col-sm-12 col-md-12 col-lg-12 mt-3 mb-3 px-2 pt-1 pb-1"  placeholder="Search...">
                 <div  style="display: flex; flex-wrap: wrap;">
 
@@ -41,6 +43,7 @@
                     <div class="ingredients" data-name="Orange peel">Orange peel <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Cherry">Cherry <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Egg white">Egg white <i class="bi bi-x remove-icon"></i></div> 
+                    <div class="ingredients" data-name="Passoa liqueur">Passoa liqueur <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Lemon">Lemon <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Lemon peel">Lemon peel <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Grapefruit">Grapefruit <i class="bi bi-x remove-icon"></i></div> 
@@ -53,7 +56,7 @@
                     <div class="ingredients" data-name="Passion fruit syrup">Passion fruit syrup <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Coconut syrup">Coconut syrup <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Cranberry">Cranberry <i class="bi bi-x remove-icon"></i></div> 
-                    <div class="ingredients" data-name="Whiskey">Whisky <i class="bi bi-x remove-icon"></i></div> 
+                    <div class="ingredients" data-name="Whiskey">Whiskey <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Peachtree">Peachtree <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Coffee liqueur">Coffee liqueur <i class="bi bi-x remove-icon"></i></div> 
                     <div class="ingredients" data-name="Malibu liqueur">Malibu liqueur <i class="bi bi-x remove-icon"></i></div> 
@@ -82,11 +85,12 @@
             </div>
 
     <div class="container col-lg-10 col-md-10 col-sm-10">
-    <div class="row mx-3">
+    <div class="row mx-3 cocktails-container " style="display:none;">
                 <div class="cocktail card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3 " data-name="Aperol Spritz">
                     <img class="img-fluid img " src="img/aperol.jpg" alt="">
                     <div class="cocktail-name">Aperol Spritz</div>
                     <div class="contains">
+                        <div class="ingredient" data-name="Ice">Full of ice</div>                    
                         <div class="ingredient" data-name="Prosecco"><b>160ml</b> - Prosecco</div>                    
                         <div class="ingredient" data-name="Aperol liquer"><b>80ml</b> - Aperol</div>                    
                         <div class="ingredient" data-name="Sparkling water">Top up water</div>                    
@@ -98,10 +102,12 @@
                 <img class="img-fluid img " src="img/cuba libre.jpg" alt="">
                 <div class="cocktail-name">Cuba Libre</div>
                 <div class="contains">               
-                    <div class="ingredient" data-name="White rum" ><b>50ml</b> - white rum (Bacardi)</div>                    
-                    <div class="ingredient" data-name="Lemon juice"><b>15ml</b> lemon juice</div>                    
+                    <div class="ingredient" data-name="Ice" >Full of ice</div>                    
+                    <div class="ingredient" data-name="Mint" >mint - 4-6 leaves</div>                    
+                    <div class="ingredient" data-name="White rum" ><b>50ml</b> - rum</div>                    
+                    <div class="ingredient" data-name="Lemon juice"><b>20ml</b> lemon juice</div>                    
                     <div class="ingredient" data-name="Coca cola">Top up Coca Cola</div>  
-                    <div class="ingredient" data-name="Lime">Garnish: lime piece</div>                     
+                    <div class="ingredient" data-name="Lime">Garnish: lime piece</div>                                        
             </div>
         </div>
 
@@ -110,11 +116,12 @@
             <div class="cocktail-name">Hugo Spritz</div>
             <div class="contains">                   
                 <div class="ingredient" data-name="Lime">lime pieces (2-3)</div>                    
-                <div class="ingredient">• ice cubes</div>                    
-                <div class="ingredient" data-name="Lemon juice"><b>20ml</b> - lemon juice</div>                    
-                <div class="ingredient" data-name="Elderflower syrup"><b>20ml</b> - elderflower (kwiat czarnego bzu)</div>                    
+                <div class="ingredient" data-name="Mint">Mint - 6-8 leaves</div>                    
+                <div class="ingredient">Full of ice</div>                    
+                <div class="ingredient" data-name="Lemon juice"><b>25ml</b> - lemon juice</div>                    
+                <div class="ingredient" data-name="Elderflower syrup"><b>25ml</b> - elderflower (kwiat czarnego bzu)</div>                    
                 <div class="ingredient" data-name="Prosecco"><b>120ml</b> - prosecco</div>                    
-                <div class="ingredient" data-name="Sparkling water">• sparkling water</div> 
+                <div class="ingredient" data-name="Sparkling water">Sparkling water</div> 
                 <div class="ingredient" data-name="Mint">Garnish: mint </div> 
                 
         </div>
@@ -125,8 +132,8 @@
         <div class="cocktail-name">Electric lemonade</div>
         <div class="contains">
             <div class="ingredient">Shaker:</div>                    
-            <div class="ingredient" data-name="Tequila"><b>30ml</b> - Silver Tequila</div>                    
-            <div class="ingredient" data-name="Blue curacao"><b>40ml</b> - blue curacao</div>                    
+            <div class="ingredient" data-name="Tequila"><b>40ml</b> - Silver Tequila</div>                    
+            <div class="ingredient" data-name="Blue curacao"><b>30ml</b> - blue curacao</div>                    
             <div class="ingredient" data-name="Lemon juice"><b>30ml</b> - lemon juice</div>                    
             <div class="ingredient">Shaking</div>                    
             <div class="ingredient" data-name="Sprite">90% fill up 10% sprite then mix</div>                    
@@ -137,7 +144,7 @@
         <img class="img-fluid img " src="img/mojito.jpg" alt="">
         <div class="cocktail-name">Mojito</div>
         <div class="contains">
-            <div class="ingredient" data-name="Lime">Muddle lime pieces (1-2)</div>                    
+            <div class="ingredient" data-name="Lime">Muddle lime pieces (3-4)</div>                    
             <div class="ingredient" data-name="Simple syrup"><b>20ml</b> - simple syrup(sugar)</div>                    
             <div class="ingredient" data-name="White rum"><b>40ml</b> - white rum (bacardi)</div>                                       
             <div class="ingredient" data-name="Mint">Mint leaves (8-10)</div>            
@@ -175,9 +182,9 @@
     <img class="img-fluid img " src="img/bittercello.jpg" alt="">
     <div class="cocktail-name">Bittercello Spritz</div>
     <div class="contains">
-        <div class="ingredient" data-name="Lemon juice"><b>45ml</b> - lemon juice</div>                    
-        <div class="ingredient" data-name="Prosecco"><b>45ml</b> - prosecco</div>                    
-        <div class="ingredient" data-name="Vermouth"><b>15ml</b> - Vermouth</div>                                       
+        <div class="ingredient" data-name="Lemon juice"><b>30ml</b> - lemon juice</div>                    
+        <div class="ingredient" data-name="Prosecco"><b>160ml</b> - prosecco</div>                    
+        <div class="ingredient" data-name="Vermouth"><b>40ml</b> - Vermouth</div>                                       
         <div class="ingredient" data-name="Sparkling water">Sparkling water top up</div>                    
         <div class="ingredient" data-name="Grapefruit">Garnish: Grapefruit piece</div>                    
 </div>
@@ -189,10 +196,10 @@
     <div class="cocktail-name">Cosmopolitan</div>
     <div class="contains">
         <div class="ingredient">Shaker:</div>                    
-        <div class="ingredient" data-name="Vodka"><b>45ml</b> - lemon vodka/simple vodka</div>                    
+        <div class="ingredient" data-name="Vodka"><b>45ml</b> - vodka</div>                    
         <div class="ingredient" data-name="Cranberry"><b>30ml</b> - cranberry</div>                    
         <div class="ingredient" data-name="Triple sec"><b>15ml</b> - triple sec</div>                                       
-        <div class="ingredient" data-name="Lemon juice"><b>10ml</b> - lemon juice</div>                    
+        <div class="ingredient" data-name="Lemon juice"><b>30ml</b> - lemon juice</div>                    
         <div class="ingredient" data-name="Lime">Garnish: Lime piece</div>                    
 </div>
 </div>
@@ -272,7 +279,7 @@
     <div class="contains">
         <div class="ingredient">Shaker:</div>                    
         <div class="ingredient" data-name="Pineapple juice"><b>120ml</b> - pineapple juice</div>                    
-        <div class="ingredient" data-name="Coconut syrup"><b>60ml</b> - coconut syrup</div>                    
+        <div class="ingredient" data-name="Coconut syrup"><b>40ml</b> - coconut syrup</div>                    
         <div class="ingredient" data-name="White rum"><b>60ml</b> - white rum</div>                                       
         <div class="ingredient" data-name="Pineapple">Garnish: Pineapple piece</div>                                       
 </div>
@@ -287,7 +294,7 @@
         <div class="ingredient" data-name="Lemon juice"><b>15ml</b> - lemon juice</div>                                       
         <div class="ingredient" data-name="Black rum"><b>50ml</b> - bacardi black</div>                    
         <div class="ingredient" data-name="Angostura bitters"><b>3 dashes</b> angostura </div>    
-        <div class="ingredient" data-name="Orange juice">Orange juice</div>    
+        <div class="ingredient" data-name="Orange juice">Orange juice top up</div>    
         <div class="ingredient">Garnish:Dryied out apple, Cinnamon, powdered sugar, put on fire</div>    
                         
 </div>
@@ -298,11 +305,11 @@
     <div class="cocktail-name">PornStar Martini</div>
     <div class="contains">
         <div class="ingredient">Shaker:</div>                    
-        <div class="ingredient" data-name="Vodka"><b>40ml</b> - vodka</div>                    
+        <div class="ingredient" data-name="Vodka"><b>45ml</b> - vodka</div>                    
         <div class="ingredient" data-name="Vanilia syrup"><b>20ml</b> - vanila syrup</div>                                       
         <div class="ingredient" data-name="Lemon juice"><b>20ml</b> - lemon juice</div>                    
-        <div class="ingredient" data-name="Passion fruit syrup"><b>15ml</b> - Passion Fruit</div>                    
-        <div class="ingredient" data-name="Passion fruit">Garnish: Passion fruit piece</div>                    
+        <div class="ingredient" data-name="Passoa liqueur"><b>20ml</b> - passoa liqueur</div>                    
+        <div class="ingredient" data-name="Passion fruit">Garnish: Passion fruit piece 1/2</div>                    
         <div class="ingredient" data-name="Prosecco">Shot of prosecco</div>                    
 </div>
 </div>
@@ -343,7 +350,7 @@
         <div class="ingredient" data-name="White rum"><b>50ml</b> - white rum</div>                   
         <div class="ingredient" data-name="Lime juice"><b>25ml</b> - lime juice</div>                   
         <div class="ingredient" data-name="Simple syrup"><b>10ml</b> - sugar syrup</div>                   
-        <div class="ingredient">ice</div>                   
+        <div class="ingredient">Ice</div>                   
         <div class="ingredient" data-name="Lime">Garnish: Lime wheel</div>                   
 </div>
 </div>
@@ -353,6 +360,7 @@
     <img class="img-fluid img " src="img/blackrussian.jpg" alt="">
     <div class="cocktail-name">Black Russian</div>
     <div class="contains">
+        <div class="ingredient" data-name="Ice">Ice</div>                   
         <div class="ingredient" data-name="Vodka"><b>50ml</b> - vodka</div>                   
         <div class="ingredient" data-name="Coffee liqueur"><b>25ml</b> - coffee liqueur</div>                   
         <div class="ingredient" data-name="Coca cola">chilled - cola top up</div>                   
@@ -365,7 +373,7 @@
     <img class="img-fluid img " src="img/bellini.jpg" alt="">
     <div class="cocktail-name">Bellini</div>
     <div class="contains">
-        <div class="ingredient" data-name="Peach mus"><b>60ml</b> - peach mus</div>                   
+        <div class="ingredient" data-name="Peach mus"><b>60ml</b> - peach puree</div>                   
         <div class="ingredient" data-name="Prosecco"><b>120ml</b> - prosseco</div>                                  
         <div class="ingredient" data-name="Peach">Garnish: sugar around the glass</div>                   
 </div>
@@ -379,10 +387,10 @@
         <div class="ingredient" data-name="White rum"><b>60ml</b> - white rum</div>                   
         <div class="ingredient" data-name="Lemon juice"><b>30ml</b> - lemon juice</div>                   
         <div class="ingredient" data-name="Orange juice"><b>30ml</b> - orange juice</div>                   
-        <div class="ingredient" data-name="Passion fruit syrup"><b>15ml</b> - passion fruit syrup</div>                   
+        <div class="ingredient" data-name="Passion fruit syrup"><b>20ml</b> - passion fruit syrup</div>                   
         <div class="ingredient" data-name="Simple syrup"><b>15ml</b> - simple syrup</div>                   
         <div class="ingredient" data-name="Grenadine"><b>15ml</b> - grenadine</div>                   
-        <div class="ingredient" data-name="Orange">Garnish: orange slice, passion slice, mint</div>                   
+        <div class="ingredient" data-name="Orange">Garnish: orange slice, passion fruit, mint</div>                   
 </div>
 </div>
 
@@ -434,9 +442,9 @@
     <div class="contains">                 
         <div class="ingredient"> Shaker: </div>                   
         <div class="ingredient" data-name="Vodka"><b>60ml</b> - Vodka</div>                   
-        <div class="ingredient" data-name="Coffee liqueur"><b>15ml</b> - Kahlua liqueur</div>                   
-        <div class="ingredient" data-name="Espresso"><b>30ml</b> - espresso</div>                   
-        <div class="ingredient" data-name="Simple syrup"><b>10ml</b> - simpe syrup</div>                   
+        <div class="ingredient" data-name="Coffee liqueur"><b>20ml</b> - Kahlua liqueur</div>                   
+        <div class="ingredient" data-name="Espresso">Shot espresso</div>                   
+        <div class="ingredient" data-name="Simple syrup"><b>15ml</b> - simpe syrup</div>                   
         <div class="ingredient" data-name="Coffee beans">Garnish: 3 coffee beans</div>                   
               
 </div>
@@ -453,53 +461,74 @@
 </div>
 </div>
 
+        <div class="shot card" data-name="">
+            <img class="img-fluid img " src="img/" alt="">
+            <div class="shot-name"></div>
+            <div class="contains">
+                <div class="ingredient" data-name=""><b></b></div>                                              
+        </div>
+        </div>
+as
 -->
 
 </div>
-       <div class="main-shots" style="display:none;"> 
-                                <!--shots-->
-
-        <div class="shot card" data-name="Silver Bullet">
-            <div class="shot-name">Silver Bullet</div>
-            <div class="contains">
-                <div class="shot-ingredient"><b>25ml</b> - Gin</div>                        
-                <div class="shot-ingredient"><b>15ml</b> - Scot Whisky</div>                        
-                <div class="shot-ingredient">Garnish: Lemon twist</div>                        
-        </div>
-        </div>
-
-
-        <div class="shot card" data-name="Blue Kamikaze">
+    <div class="shots-container container col-lg-10 col-md-10 col-sm-10" >
+    <div class="row mx-3 cocktails-container ">
+        <div class="shot card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3" data-name="Blue Kamikaze">
+            <img class="img-fluid img " src="img/bluekamikaze.jpg" alt="">
             <div class="shot-name">Blue Kamikaze</div>
             <div class="contains">
-                <div class="shot-ingredient">Shaker:</div>                        
-                <div class="shot-ingredient"><b>20ml</b> - vodka</div>                        
-                <div class="shot-ingredient"><b>10ml</b> - blue curacao</div>                        
-                <div class="shot-ingredient"><b>10ml</b> - lime juice</div>                        
-                <div class="shot-ingredient">Garnish: Lime slice</div>                        
+                <div class="ingredient">Shaker:</div>                        
+                <div class="ingredient" data-name="Vodka"><b>20ml</b> - vodka</div>                        
+                <div class="ingredient" data-name="Blue curacao"><b>10ml</b> - blue curacao</div>                        
+                <div class="ingredient" data-name="Lime juice"><b>10ml</b> - lime juice</div>                        
+                <div class="ingredient" data-name="Lime">Garnish: Lime slice/salt</div>                        
         </div>
         </div>
 
 
-        <div class="shot card" data-name="Kamikaze">
+        <div class="shot card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3" data-name="Kamikaze">
+            <img class="img-fluid img " src="img/kamikaze.jpg" alt="">
             <div class="shot-name">Kamikaze</div>
             <div class="contains">
-                <div class="shot-ingredient"><b>20ml</b> - vodka</div>                        
-                <div class="shot-ingredient"><b>15ml</b> - Triple sec</div>                        
-                <div class="shot-ingredient"><b>5ml</b> - lime juice</div> 
-                <div class="shot-ingredient">Garnish: Lime slice</div>                        
+                <div class="ingredient" data-name="Vodka"><b>20ml</b> - vodka</div>                        
+                <div class="ingredient" data-name="Triple sec"><b>15ml</b> - Triple sec</div>                        
+                <div class="ingredient" data-name="Lime juice"><b>15ml</b> - lime juice</div> 
+                <div class="ingredient" data-name="Lime">Garnish: Lime slice</div>                        
         </div>
         </div>
 
 
-        <div class="shot card" data-name="Woo Woo">
+        <div class="shot card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3" data-name="Woo Woo">
+            <img class="img-fluid img " src="img/woowoo.jpg" alt="">
             <div class="shot-name">Woo Woo</div>
             <div class="contains">
-                <div class="shot-ingredient"><b>10ml</b> - PeachTree</div>                        
-                <div class="shot-ingredient"><b>15ml</b> - vodka</div>                        
-                <div class="shot-ingredient"><b>20ml</b> - Cranberry</div>                        
+                <div class="ingredient" data-name="PeachTree"><b>10ml</b> - PeachTree</div>                        
+                <div class="ingredient" data-name="Vodka"><b>15ml</b> - vodka</div>                        
+                <div class="ingredient" data-name="Cranberry"><b>20ml</b> - Cranberry</div>                        
         </div>
         </div>
+        <div class="shot card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3" data-name="Lemon Drop">
+            <img class="img-fluid img " src="img/lemondrop.jpg" alt="">
+            <div class="shot-name">Lemon Drop</div>
+            <div class="contains">
+                <div class="ingredient" data-name="Vodka"><b>20ml</b> - vodka</div> 
+                <div class="ingredient" data-name="Lemon juice"><b>20ml</b> - lemon juice</div> 
+                <div class="ingredient" data-name="Simple syrup"><b>10ml</b> - simple syrup</div> 
+                <div class="ingredient" data-name="Lemon">Lemon peace</div>                                            
+        </div>
+        </div>
+        <div class="shot card col-sm-10 col-md-4 col-lg-2 pt-2 mt-3 me-3 mb-3" data-name="Ginger slut">
+            <img class="img-fluid img " src="img/gingerslut.jpg" alt="">
+            <div class="shot-name">Ginger slut</div>
+            <div class="contains">
+                <div class="ingredient" data-name=""><b>15ml</b> - Jagermeister</div>                                              
+                <div class="ingredient" data-name=""><b>15ml</b> - PeachTree</div>                                              
+                <div class="ingredient" data-name=""><b>15ml</b> - Cranberry</div>                                              
+                                                             
+        </div>
+        </div>
+    </div>
     </div>
 
 </div>

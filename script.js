@@ -45,3 +45,13 @@ ingredients.forEach(ingredient => {
         filterCocktails();
     });
 });
+let cocktails_container = document.querySelector(".cocktails-container");
+let shots_container = document.querySelector(".shots-container");
+document.getElementById("cocktails").addEventListener("click",function(){
+    cocktails_container.style.display = "flex";
+    shots_container.style.display = "none";
+});
+document.getElementById("shots").addEventListener("click",function(){
+    cocktails_container.style.display = "none";
+    shots_container.style.display = "flex";
+});
