@@ -93,9 +93,6 @@ padding:20px ;
     font-size:30px;
     font-weight: 700;
 }
-.shot > img{
-    max-height:250px;
-}
 .shot-ingredient {
 font-size:larger;
 font-weight: 500;
