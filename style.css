@@ -108,3 +108,10 @@ font-weight: 900;
 
 }
 
+.ingredients-title{
+    font-size:x-large;
+    text-align: center;
+    margin: 10px auto;
+    border:1px solid black;
+    font-weight: 700;
+}
