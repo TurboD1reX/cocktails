@@ -112,4 +112,35 @@ padding:2px 15px !important;
 font-weight: 900;
 
 }
+.shots-title{
+    font-size:50px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 30em;
+    border:2px solid black;
+}
+.specify-method{
+width: fit-content;
+border-radius: 10em;
+text-transform: uppercase;
+font-weight: 600;
+text-align: center;
+font-size:14px;
+margin:0px 0 10px 0;
+padding:1px 15px !important;
+
+}
+.stir{
+    background-color: #d580ff;
+    color: #7700b3;
+}
+.shake{
+    background-color: #00e673;
+    color:#006633;
+
+}
+.build{
+    background-color: #ffa64d;
+    color:#804000;
+}
 
