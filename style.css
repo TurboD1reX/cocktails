@@ -2,6 +2,9 @@
     font-family: "Oswald", sans-serif;
     
 }
+body{
+    background-color: #E5ECE9;
+}
 .hyperlink-button{
 font-family: "Playwrite CO", cursive !important;
 font-size:28px;
@@ -40,7 +43,7 @@ border:1px solid black;
 }
 .ingredients.selected{
     background-color: rgb(199, 197, 197);
-    color:#005892;
+    color:#8d1420;
     transition: ease 0.3s;
 }
 .remove-icon{
@@ -51,7 +54,7 @@ border:1px solid black;
     display: flex;
 }
 .ingredients{
-    color: #0099ff;
+    color: #E83144;
     display:flex;
     text-transform: capitalize;
     width:fit-content;
@@ -82,12 +85,10 @@ border:1px solid black;
 .ingredient{
     font-size:18px;
     margin:5px 0;
+    color:#423E3B;
 }
-.ingredient>b{
-    background-color:#008ae6;
-    border-radius:3px;
-    color:white;
-    padding:0px 5px;
+.ingredient > b{
+color:#FEA82F; 
 }
 .shot{
 Height:fit-content;
@@ -143,4 +144,8 @@ padding:1px 15px !important;
     background-color: #ffa64d;
     color:#804000;
 }
+.img-service{
+    width:35px !important;
+    height:35px !important;
 
+}
